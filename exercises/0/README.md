@@ -1,6 +1,6 @@
 # Java Assessment Exercise
 
-DUE: Aug 28, 2020 11:59 PM
+DUE: Jan 27, 2021 3:00 PM
 
 The purpose of this exercise is to assess your Java programming skills coming
 into this class.  Please submit by Wednesday 11:59 PM so that I may give you
@@ -165,7 +165,9 @@ as specified.  Pay attention to the Javadoc comments on top of each method.
 
 ## Submission
 
-You will do GitHub submission to GradeScope.
+You will do GitHub submission to GradeScope.  If you are new to GitHub, there
+is a short git tutorial under the lectures folder:
+[Using_Git.pdf](lectures/Using_Git.pdf).
 
 1. By now you should have created a new github repository just for this
    exercise.  Make sure you keep the repository *PRIVATE* so that nobody else
@@ -177,8 +179,6 @@ commit and push your changes to the github repository.
 autograder to grade you and give feedback.  If you get deductions, fix your
 code based on the feedback and resubmit.  Repeat until you don't get
 deductions.
-
-Please submit by Wednesday (5/13) 11:59 PM to count towards attendance.
 
 IMPORTANT: Please keep the github private!  This applies to all future submissions.
 
