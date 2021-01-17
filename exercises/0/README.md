@@ -23,7 +23,7 @@ Please follow the below instructions.
 
 ## Install JDK 8
 
-The official Java version for this class is Java 8 (1.8.0.231).  Please install the Java package for your OS at: 
+The official Java version for this class is Java 8 (1.8.0.231).  Please install the Java package for your OS at:
 
 https://drive.google.com/drive/folders/1E76H7y2nMsrdiBwJi0nwlzczAgTKKhv7
 
@@ -83,7 +83,7 @@ It's a brew installation so it should be pretty painless.
 For every source code submission in this class, you are asked to create a new
 GitHub repository.  If you don't already have a GitHub account, please create
 one.  If you are new to GitHub, there is a short git tutorial under the
-lectures folder: [Using_Git.pdf](lectures/Using_Git.pdf).  Please refer to it
+lectures folder: [Using_Git.pdf](/lectures/Using_Git.pdf).  Please refer to it
 as you follow the below instructions.
 
 1. If you are new to git source versioning or GitHub, I recommend that you
@@ -123,7 +123,7 @@ Go to the new repository folder you created for this exercise and make sure that
 
 ```
 $ mkdir bin
-$ javac -d bin src/*.java 
+$ javac -d bin src/*.java
 
 ```
 
