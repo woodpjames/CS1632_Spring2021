@@ -167,7 +167,7 @@ as specified.  Pay attention to the Javadoc comments on top of each method.
 
 You will do GitHub submission to GradeScope.  If you are new to GitHub, there
 is a short git tutorial under the lectures folder:
-[Using_Git.pdf](lectures/Using_Git.pdf).
+[Using_Git.pdf](/lectures/Using_Git.pdf).
 
 1. By now you should have created a new github repository just for this
    exercise.  Make sure you keep the repository *PRIVATE* so that nobody else
