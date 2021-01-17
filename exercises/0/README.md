@@ -82,12 +82,12 @@ It's a brew installation so it should be pretty painless.
 
 For every source code submission in this class, you are asked to create a new
 GitHub repository.  If you don't already have a GitHub account, please create
-one.  
+one.  If you are new to GitHub, there is a short git tutorial under the
+lectures folder: [Using_Git.pdf](lectures/Using_Git.pdf).  Please refer to it
+as you follow the below instructions.
 
 1. If you are new to git source versioning or GitHub, I recommend that you
 start by using the Desktop GUI version.  You can download it from:
-
-    https://desktop.github.com/
 
 2. Once you've installed GitHub Desktop, let's first clone the course repository to your computer:
 
@@ -95,7 +95,7 @@ start by using the Desktop GUI version.  You can download it from:
 
     You will need to go to the root of the course repository to get the clone link:
 
-    https://github.com/wonsunahn/CS1632_Fall2020
+    https://github.com/wonsunahn/CS1632_Spring2021
 
     This way, you will have always have up=to-date course materials on your
 computer.  Whenever there are updates to the course materials, the "Pull"
@@ -165,9 +165,7 @@ as specified.  Pay attention to the Javadoc comments on top of each method.
 
 ## Submission
 
-You will do GitHub submission to GradeScope.  If you are new to GitHub, there
-is a short git tutorial under the lectures folder:
-[Using_Git.pdf](lectures/Using_Git.pdf).
+You will do GitHub submission to GradeScope.  
 
 1. By now you should have created a new github repository just for this
    exercise.  Make sure you keep the repository *PRIVATE* so that nobody else
