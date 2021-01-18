@@ -1,3 +1,5 @@
 
 *.un~
 *.md~
+.course-info.md.swp
+*.swp
