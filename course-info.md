@@ -118,10 +118,10 @@ late, you would receive 90 - 15 = 75%.).
 
 ## Group Work
 
-Please submit this [Partnership Contract](partnership_contract.txt) to
-GradeScope by 8/28.  Your expectations as a group member are outlined clearly
-on the contract.  You may resubmit the contract at a later time, at which time
-the new contract will come into effect.
+Please submit the Partnership Contract on GradeScope by 2/5.  Your
+expectations as a group member are outlined clearly on the contract.  You may
+resubmit the contract at a later time, at which time the new contract will come
+into effect.
 
 ## Project Details
 
