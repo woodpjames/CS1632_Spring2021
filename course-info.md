@@ -142,12 +142,11 @@ deliverables and get feedback on mistakes you made so that you don't make the
 same mistakes on your deliverables.  Since exercises are unscored, you are free
 to discuss them with your classmates, including sharing each other's code.
 
-Exercises will be released on Mondays in class and will be due on the following
+Exercises will be **released on Mondays** in class and will be due on the following
 Wednesday at the end of class.  You will be given time in-class on Monday to
 complete it and if you don't, you can keep working on it until Wednesday.  On
 Wednesday, we will discuss the exercise and you will have a chance to ask
-questions if you had any difficulties.  You can finish up and submit at
-end-of-class Wednesday.
+questions if you had any difficulties.  You can finish up and **submit by Wednesday night**.
 
 * **Exercise 0:** Java assessment exercise
 * **Exercises 1-5:** Exercises that prepare you for the corresponding deliverable
