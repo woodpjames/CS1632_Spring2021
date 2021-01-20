@@ -35,7 +35,7 @@ emphasis is on providing practical skills in software testing currently used in
 industry. To that end, it will cover: manual and automated tests, test-driven
 development, performance testing, and model checking.
 
-This lecture will use the _flipped classroom_ learning model.  All lectures
+This lecture will use the **flipped classroom** learning model.  All lectures
 (except the introductury lectures and guest lectures) will be pre-recorded and
 posted on Canvas.  It is your responsibility to keep up with the lectures
 according to the schedule on the [Syllabus](syllabus.md).  There will be eight
