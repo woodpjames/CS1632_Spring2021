@@ -194,8 +194,8 @@ individual.
 
     For the fastest response, please use Teams chat.
 
-When you ask a question about an exercise or deliverable, please submit your
-source code to GradeScope so that I can reproduce your error.  Also, describe
+When you ask a source-code-specific question about an exercise or deliverable, please submit your
+code to GradeScope so that I can reproduce your error.  Also, describe
 precisely the steps I should take to reproduce your error.  Before you do this,
 it is very hard for me to help you.
 
