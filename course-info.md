@@ -19,6 +19,7 @@ Software Quality Assurance - Spring 2021
 
 **Grading TA Information:**
 
+  * Name: Shubhrika Sehgal (shs253 at pitt dot edu)
   * Primary mode of communication: "Regrade Request" on GradeScope
   * Secondary mode of communication: Chat on Microsoft Teams
   
