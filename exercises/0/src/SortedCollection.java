@@ -17,6 +17,7 @@ public class SortedCollection {
 
 	/**
 	 * Removes the smallest number in the collection and returns it.
+	 * If the collection is empty, throws a NoSuchElementException.
 	 * 
 	 * @return the smallest number in the collection
 	 */
