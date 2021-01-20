@@ -9,6 +9,7 @@ AFIST = [_A Friendly Introduction to Software Testing_](software-quality-assuran
   * Submit the TopHat survey questions (due 1/27 on TopHat)
   * Do the [Java Assessment Exercise](exercises/0) (due 1/27 on GradeScope)
   * Fill out the Partnership Contract (due 2/5 on GradeScope)
+  * Say hello to your friends
   
 ## WEEK 2 (Week of 25 JAN)
 
