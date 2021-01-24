@@ -68,8 +68,10 @@ If you use [Chocolatey](https://chocolatey.org/) as your package manager, and yo
 
 1. Open ~/.bash_profile with your favorite editor (if you don't have one, just do "pico ~/.bash_profile")
 2. Add the following 2 lines at the bottom
-export PATH=/Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/bin:$PATH
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/
+   ```
+   export PATH=/Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/bin:$PATH
+   export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/
+   ```
 3. Save the file and exit from the terminal
 4. Relaunch the terminal and try doing "which java".  It should say /Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/bin/java.
 5. Now you are good to go!  Otherwise, try doing "echo $PATH" and see if your path is not updated properly, or if there is some other Java installation before you.
