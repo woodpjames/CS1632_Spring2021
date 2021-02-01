@@ -5,23 +5,26 @@ Spring Semester 2021 - Exercise 1
 
 ## Description
 
-For this exercise, you and your partner will determine a test plan for the
-simple simulator GoatGoatCar, based on the requirements listed.  There should
-be at least 6 test cases altogether.  Test cases should mention all necessary
-preconditions, execution steps, and postconditions.  Additionally, a
-traceability matrix showing the mapping of test cases to requirements is
-required.  
+For this exercise, you and your partner will determine a **test plan** for the
+simple simulator GoatGoatCar, based on the requirements listed.
 
-There are several known defects in the software (10 at last count); try to find and
-report on at least two.
+* There should be at least **6 test cases** altogether.
+* Test cases should have unambiguous preconditions, execution steps, and
+  postconditions.  Remember, a test case should be **reproducible** no matter
+who is doing the testing and should be executable **independent** of one other.
+* The test plan should include a **traceability matrix** showing the mapping of
+  test cases to requirements.  The traceability matrix should **cover all
+requirements** for good test coverage.
 
-It is expected that you execute the test plan in order to find the defects, but
-you may find it useful to initially do some exploratory testing to determine
-how the system works.  While you are not expected to find *all* of the defects,
-a reasonable test plan should definitely find at least two.  This is an
-intentionally target-rich environment.
+You will execute the above test plan to find defects in the software.  There
+are several known defects (10 at last count); try to find and report on at
+least two.
 
-You may ask me any questions you may have during class.  It's not scored.  Ask me anything.
+You may find it useful to initially do some **exploratory testing** to
+determine how the system works before coming up with a test plan.  Exploring
+the software will give you a good feel of which test cases to add and which
+ones are likely fo uncover defects.  A good test plan has edge cases and corner
+cases as well as base cases.
 
 ## Creating a Test Plan
 
@@ -43,7 +46,7 @@ template are omitted because we are not doing method unit testing.
 Please refer to [Lecture 4: Test Plans](../../lectures/CS1632_Lecture4_Test_Plans.pdf) Slides 8 - 13
 for more details and examples for each item.
 
-PRECONDITIONS is the state of the system before performing the test.  If the
+PRECONDITIONS is the **state of the system before performing the test**.  If the
 system is a website, it is things like: "user is logged into the website" or
 "user is subscribed to the mailing list", etc.  The program we will be testing
 today is a commandline Java program where the test is simply running the
@@ -56,13 +59,13 @@ Companies would actually perform multiple tests using the same arguments for
 multiple versions of Java that their clients use, and each would be a separate
 test case!
 
-EXECUTION STEPS should be numbered step-by-step instructions on what you expect
+EXECUTION STEPS should be **numbered step-by-step instructions** on what you expect
 the tester to do.  It should be exact to the letter so that tests are
 reproducible.  The tested program does not allow any interaction with the user
 other than to run it with commandline arguments, so all steps will be
 one-liners in this case, but typically there will be multiple steps.
 
-POSTCONDITIONS should be the **expected** state of the program after the test.
+POSTCONDITIONS should be the **expected state** of the program after the test.
 It is **not** the observed state.  So where should you get expectations of your
 program?  From the [requirements](requirements.md) of course!
 
@@ -184,12 +187,6 @@ will be accessible to both of you.
 
 When your exercise is marked as graded, you should find feedback written on
 your grade details.  Please use the feedback wisely when doing Deliverable 1!
-
-* One quirk about submissions: the exercise on GradeScope is due on Wednesday but
-late submission is allowed until Thursday.  That is just a trick I'm using to
-differentiate the two sections.  The Mon/Wed class should still submit by
-Wednesday 9:00 Am and the Thu/Thu class should still submit by Thursday 9:00
-AM.
 
 ## Extra Credit
 
