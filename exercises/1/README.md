@@ -1,7 +1,7 @@
 # CS 1632 - Software Quality Assurance
 Fall Semester 2020 - Exercise 1
 
-* DUE: Feb 15, 2021 11:00 AM 
+* DUE: Feb 3 (Wednesday), 2021 11:59 PM 
 
 ## Description
 
