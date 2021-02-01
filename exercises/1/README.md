@@ -1,5 +1,5 @@
 # CS 1632 - Software Quality Assurance
-Fall Semester 2020 - Exercise 1
+Spring Semester 2021 - Exercise 1
 
 * DUE: Feb 3 (Wednesday), 2021 11:59 PM 
 
@@ -193,7 +193,7 @@ AM.
 
 ## Extra Credit
 
-* DUE: Sep 14, 2020 09:00 AM
+* DUE: Feb 15, 2021 11:00 AM
 
 This submission is optional.  An extra credit of 1 point out of 100 points for
 the entire course will be awarded to the group that finds the most number of
