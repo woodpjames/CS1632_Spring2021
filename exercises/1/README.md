@@ -16,7 +16,7 @@ who is doing the testing and should be executable **independent** of one other.
   test cases to requirements.  The traceability matrix should **cover all
 requirements** for good test coverage.
 
-You will execute the above test plan to find defects in the software.  There
+You will execute the above test plan to find **defects** in the software.  There
 are several known defects (10 at last count); try to find and report on at
 least two.
 
