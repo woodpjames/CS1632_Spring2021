@@ -1,7 +1,7 @@
 # CS 1632 - Software Testing
 Spring Semester 2021
 
-* DUE: Feb 15, 2020 11:00 AM
+* DUE: Feb 15, 2021 11:00 AM
 
 ## Deliverable 1
 
