@@ -108,8 +108,8 @@ actions rather than the externally visible program state, especially if you
 feel that the externally visible state does not fully describe internal program
 state.  Then you may ask, wouldn't that make the preconditions harder to read?
 It's much easier to understand "the player has sugar" rather than trying to
-decypher the series of steps that leads to that precondition.  Well, you can
-describe each precondition conceptually then below it, list the steps that
+decypher the series of steps that leads to that precondition.  So the best
+thng to do is: describe each precondition conceptually then below it, list the steps that
 implement the precondition.  For example:
    ```
    PRECONDITIONS:
