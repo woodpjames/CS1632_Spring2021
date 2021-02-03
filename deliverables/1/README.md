@@ -5,17 +5,14 @@ Spring Semester 2021
 
 ## Deliverable 1
 
-For this assignment, your group will determine a test plan for the simple game
+For this assignment, your group will determine a **test plan** for the simple game
 Coffee Maker Quest, based on the requirements listed.  There are several known
-defects in the software; you will need to find and report on at least three.
+**defects** in the software; you will need to find and report on **at least three**.
 Additionally, a traceability matrix showing the mapping of test cases to
 requirements is required.
 
 There should be two and only two members in a group.  You may choose to work on
 the assignment alone if that's what you prefer.
-
-There should be at least one test case per requirement, although I would
-normally expect several test cases per requirement.  
 
 Each requirement should have AT LEAST one test case associated with it in order
 to have good test coverage.  Each test case should have AT LEAST one
@@ -24,7 +21,8 @@ happen to test more than one requirement using a single set of inputs, and that
 is fine.  The above can easily be checked via a traceability matrix (which you
 should also deliver). 
 
-Test cases should mention all necessary preconditions, execution steps, and postconditions.
+Test cases should mention all necessary preconditions, execution steps, and
+postconditions.  Please refer to **Exercise 1** on how to write good test cases.
 
 I expect you to test several edge and corner cases as part of the test plan.
 If you do this, I'd estimate that the number of test cases is at least 2x the
@@ -33,9 +31,9 @@ of requirements, you are probably overtesting.
 
 You are expected to execute the test plan in order to find the defects.  There
 are AT LEAST three.  Full credit will be given only to those who properly find
-and describe at least three.  While you are not expected to find all of the
-defects, a reasonable test plan should definitely find at least three.  This is
-an intentionally target-rich environment.
+and describe them.  While you are not expected to find all of the defects, a
+reasonable test plan should definitely find at least three.  This is an
+intentionally target-rich environment.
 
 ## Format
 The report should start with a cover page with:
@@ -81,15 +79,21 @@ There are a few things that are different from Exercise 1 though:
 
 1. Execution Steps: Exercise 1 had just one execution step (launching the
    program).  You will have multiple steps for most test cases in this
-deliverable.  All steps must numbered and clearly delineated.  It should not
-say "Go north".  Instead it should say "Type N and press [Enter]".
+deliverable.  All steps must be numbered, clearly delineated, and unambiguous.
+For example, it should not say "Go north".  Instead it should say "Type N and
+press [Enter]".
 
-2. Preconditions: Unlike Exercise 1, now preconditions can include program
-   state as well as other system state.  For example, you might want express a
-precondition that the player has sugar in possession.  Now you have two
-options: 1) Just straight up say "The player has sugar" or 2) List the input
-steps that led to the program state where the player has sugar.  Which do you
-prefer?
+2. Preconditions: Unlike Exercise 1, the user goes through a prolonged
+   interaction with the program.  Everytime there is an interaction, internal
+program state gets modified.  Certain test cases may be performed only when a
+set of internal program state prerequisites are satisfied.  For example, you
+might want express a precondition that the player has sugar in possession but
+no cream or coffee.  As you can see, now preconditions can include program
+state as well as system setup (such as the Java installation).  
+
+   In order to express this precondition, you have two options: 1) Just
+straight up say "The player has sugar" or 2) List the input steps that led to
+the program state where the player has sugar.  Which do you prefer?
 
    The former has brevity on its side, but if you really want your test case to
 be reproducible you should really do the latter.  Because depending on the
@@ -100,13 +104,23 @@ took to get to the sugar, that counter value would be different and that value
 may impact the final outcome of your program!
 
    So in summary, always describe preconditions as a series of performed
-actions rather than the external visible program state.  This also applies to
-defect reporting.  Then you may ask, wouldn't that make the preconditions
-harder to read?  It's much easier to understand "the player has sugar" rather
-than trying to decypher the series of steps that leads to that precondition.
-Well, you can describe the preconditions you are trying to achieve at the
-beginning of the PRECONDITIONS item and then list the steps that get you there.
-Phew!
+actions rather than the externally visible program state, especially if you
+feel that the externally visible state does not fully describe internal program
+state.  Then you may ask, wouldn't that make the preconditions harder to read?
+It's much easier to understand "the player has sugar" rather than trying to
+decypher the series of steps that leads to that precondition.  Well, you can
+describe each precondition conceptually then below it, list the steps that
+implement the precondition.  For example:
+   ```
+   PRECONDITIONS:
+   Java 8 is installed and is in the OS PATH environment variable.
+   The game has started and the player has sugar.  Steps:
+     1. Launch program by: "java -jar coffeemaker.jar"
+     2. Type "N [Enter]" in prompt 
+     ...
+   ```
+
+The above also applies to defect reporting.  
 
 ## Coffee Maker Quest
 
@@ -117,8 +131,8 @@ all the necessary elements, you win.  If you decide to drink before getting all
 of the necessary elements, you lose.
 
 You can run it downloading the coffeemaker.jar file and running:
-```bash
-java -jar coffeemaker.jar
+```
+bash$ java -jar coffeemaker.jar
 ```
 
 The requirements are listed in the file [requirements.txt](requirements.txt).
