@@ -101,15 +101,13 @@ gcc datarace.tsan.o -lm -pie -fsanitize=thread -o datarace.tsan
 
 Note how when I create ASAN instrumented binaries (e.g. stack_overflow.asan,
 stack_pointer_return.asan, ...), I pass the -fsanitize=address compiler option
-to clang.  You need to pass it to both the compilation stage and the linking
+to gcc.  You need to pass it to both the compilation stage and the linking
 stage.
 
 Also note how when I create TSAN instrumented binaries (e.g. datarace.tsan)
 I pass the -fsanitize=thread compiler option
-to clang.  You need to pass it to both the compilation stage and the linking
+to gcc.  You need to pass it to both the compilation stage and the linking
 stage.
-
-The same goes for -fsanitize=thread for TSAN instrumented binaries.
 
 ## Testing ASLR (Address Space Layout Randomization)
 
