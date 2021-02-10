@@ -69,8 +69,8 @@ directory.  Create and go to a directory of your choice (or you can stay at
 your default home directory) and do the following:
 
 ```
-$ cp -R /home/PITT/wahn/nondeterminism/C ./
-$ cd nondeterminism
+$ cp -R /home/PITT/wahn/nondeterminism ./
+$ cd nondeterminism/C
 ```
 
 I have provided a Makefile build script to automate the build.  All you have to do is invoke 'make':
