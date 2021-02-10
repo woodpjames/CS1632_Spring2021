@@ -70,8 +70,8 @@ directory.  Create and go to a directory of your choice (or you can stay at
 your default home directory) and do the following:
 
 ```
-$ cp -R /afs/cs.pitt.edu/courses/1632/nondeterminism/ ./
-$ cd nondeterminism/C
+$ cp -R /home/PITT/wahn/nondeterminism/C ./
+$ cd nondeterminism
 ```
 
 I have provided a Makefile build script to automate the build.  All you have to do is invoke 'make':
