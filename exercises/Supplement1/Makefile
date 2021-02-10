@@ -1,18 +1,20 @@
-TARGETS = heap stack stack_overflow stack_pointer_return datarace binary_tree
-OBJS = heap.o stack.o stack_overflow.o o stack_pointer_return.o datarace.o binary_tree.o
-CC = /afs/cs.pitt.edu/courses/1632/clang-9.0.1/bin/clang
-COPT = -g -w
-LOPT =
-
+TARGETS = heap.bin stack.bin stack_overflow.bin stack_pointer_return.bin binary_tree.bin datarace.bin
+OBJS = heap.o stack.o stack_overflow.o o stack_pointer_return.o binary_tree.o datarace.o
 ASANTARGETS = stack_overflow.asan stack_pointer_return.asan binary_tree.asan
 ASANOBJS = stack_overflow.asan.o stack_pointer_return.asan.o binary_tree.asan.o
+TSANTARGETS = datarace.tsan
+TSANOBJS = datarace.tsan.o
+
+CC = gcc
+
+COPT = -g -w
+LOPT = -lm
+
 ASANCOPT = -fsanitize=address
 ASANLOPT = -fsanitize=address
 
-TSANTARGETS = datarace.tsan
-TSANOBJS = datarace.tsan.o
-TSANCOPT = -fPIE -pthread -fsanitize=thread
-TSANLOPT = -pie -pthread -fsanitize=thread
+TSANCOPT = -fPIE -fsanitize=thread
+TSANLOPT = -pie -fsanitize=thread
 
 all: $(TARGETS) $(ASANTARGETS) $(TSANTARGETS)
 
@@ -25,35 +27,28 @@ all: $(TARGETS) $(ASANTARGETS) $(TSANTARGETS)
 %.tsan.o: %.c
 	$(CC) -c $(COPT) $(TSANCOPT) $< -o $@
 
-heap: heap.o
+%.bin: %.o
 	$(CC) $< $(LOPT) -o $@
 
-stack: stack.o
-	$(CC) $< $(LOPT) -o $@
+%.asan: %.asan.o
+	$(CC) $< $(LOPT) $(ASANLOPT) -o $@
 
-stack_overflow: stack_overflow.o
-	$(CC) $< $(LOPT) -o $@
+%.tsan: %.tsan.o
+	$(CC) $< $(LOPT) $(TSANLOPT) -o $@
 
-stack_pointer_return: stack_pointer_return.o
-	$(CC) $< $(LOPT) -o $@
+datarace.o: datarace.c
+	$(CC) -c $(COPT) -pthread $< -o $@
 
-datarace: datarace.o
+datarace.bin: datarace.o
 	$(CC) $< $(LOPT) -pthread -o $@
 
-binary_tree: binary_tree.o
-	$(CC) $< $(LOPT) -lapr-1 -o $@
+datarace.tsan.o: datarace.c
+	$(CC) -c $(COPT) $(TSANCOPT) -pthread $< -o $@
 
-stack_overflow.asan: stack_overflow.asan.o
-	$(CC) $< $(LOPT) $(ASANLOPT) -o $@
+datarace.tsan.bin: datarace.o
+	$(CC) $< $(LOPT) $(TSANLOPT) -pthread -o $@
 
-stack_pointer_return.asan: stack_pointer_return.asan.o
-	$(CC) $< $(LOPT) $(ASANLOPT) -o $@
-
-binary_tree.asan: binary_tree.asan.o
-	$(CC) $< $(LOPT) $(ASANLOPT) -lapr-1 -o $@
-
-datarace.tsan: datarace.tsan.o
-	$(CC) $< $(LOPT) $(TSANLOPT) -o $@
+.PRECIOUS: $(OBJS) $(ASANOBJS) $(TSANOBJS)
 
 clean:
 	rm -f $(TARGETS) $(ASANTARGETS) $(TSANTARGETS) $(OBJS) $(ASANOBJS) $(TSANOBJS)
