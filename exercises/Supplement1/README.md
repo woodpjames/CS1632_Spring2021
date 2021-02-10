@@ -1,7 +1,7 @@
 # CS 1632 - Software Quality Assurance
 Spring Semester 2021 - Supplementary Exercise 1
 
-* DUE: Sep 28, 2020 09:00 AM (Mon/Wed class)
+* DUE: No Submission 
 
 ## Description
 
@@ -26,8 +26,7 @@ Nondeterminism lecture.  By trying out these programs, you will learn the follow
 
 ## Connecting to thoth.cs.pitt.edu
 
-In order to use ASAN or TSAN, you need to clang version >= 3.1 or gcc version
->= 4.8.  Since you are unlikely to have either installed on your local
+In order to use ASAN or TSAN, you need to clang version >= 3.1 or gcc version >= 4.8.  Since you are unlikely to have either installed on your local
 computer, I will ask you to connect using SSH to one of the departmental public
 Linux servers at thoth.cs.pitt.edu.
 
@@ -70,8 +69,8 @@ directory.  Create and go to a directory of your choice (or you can stay at
 your default home directory) and do the following:
 
 ```
-$ cp -R /home/PITT/wahn/nondeterminism/C ./
-$ cd nondeterminism
+$ cp -R /home/PITT/wahn/nondeterminism ./
+$ cd nondeterminism/C
 ```
 
 I have provided a Makefile build script to automate the build.  All you have to do is invoke 'make':
@@ -101,16 +100,15 @@ gcc datarace.tsan.o -lm -pie -fsanitize=thread -o datarace.tsan
 ```
 
 Note how when I create ASAN instrumented binaries (e.g. stack_overflow.asan,
-stack_pointer_return.asan, ...), I pass the -fsanitize=address compiler option
-to clang.  You need to pass it to both the compilation stage and the linking
+stack_pointer_return.asan, ...), I pass the **-fsanitize=address** compiler option
+to gcc.  You need to pass it to both the compilation stage and the linking
 stage.
 
 Also note how when I create TSAN instrumented binaries (e.g. datarace.tsan)
-I pass the -fsanitize=thread compiler option
-to clang.  You need to pass it to both the compilation stage and the linking
-stage.
-
-The same goes for -fsanitize=thread for TSAN instrumented binaries.
+I pass the **-fsanitize=thread** compiler option
+to gcc.  I also pass the **-fPIE** and **-pie** options to the compilation and linking
+stages respectively.  This makes your code position independent, and is needed for
+TSAN to work flawlessly (if you don't know what PIE is, you'll learn in CS 449).
 
 ## Testing ASLR (Address Space Layout Randomization)
 
@@ -439,6 +437,7 @@ gcc stack_overflow.asan.o -lm -fsanitize=address -o stack_overflow.asan
 
 ## Resources
 
+* Reproducible Builds Website: https://reproducible-builds.org/docs/
 * Windows SSH Terminal Client: [Putty](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html)
 * File Transfer Client: [FileZilla](https://filezilla-project.org/download.php?type=client)
 * Linux command line tutorial: [The Linux Command Line](http://linuxcommand.org/lc3_learning_the_shell.php)
