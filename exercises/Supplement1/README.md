@@ -1,7 +1,7 @@
 # CS 1632 - Software Quality Assurance
 Spring Semester 2021 - Supplementary Exercise 1
 
-* DUE: Sep 28, 2020 09:00 AM (Mon/Wed class)
+* DUE: No Submission 
 
 ## Description
 
