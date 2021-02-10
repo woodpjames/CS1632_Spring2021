@@ -100,14 +100,15 @@ gcc datarace.tsan.o -lm -pie -fsanitize=thread -o datarace.tsan
 ```
 
 Note how when I create ASAN instrumented binaries (e.g. stack_overflow.asan,
-stack_pointer_return.asan, ...), I pass the -fsanitize=address compiler option
+stack_pointer_return.asan, ...), I pass the **-fsanitize=address** compiler option
 to gcc.  You need to pass it to both the compilation stage and the linking
 stage.
 
 Also note how when I create TSAN instrumented binaries (e.g. datarace.tsan)
-I pass the -fsanitize=thread compiler option
-to gcc.  You need to pass it to both the compilation stage and the linking
-stage.
+I pass the **-fsanitize=thread** compiler option
+to gcc.  I also pass the **-fPIE** and **-pie** options to the compilation and linking
+stages respectively.  This makes your code position independent, and is needed for
+TSAN to work flawlessly (if you don't know what PIE is, you'll learn in CS 449).
 
 ## Testing ASLR (Address Space Layout Randomization)
 
