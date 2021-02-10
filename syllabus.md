@@ -38,7 +38,7 @@ AFIST = [_A Friendly Introduction to Software Testing_](software-quality-assuran
 
 * Class 1: Software QA and Nondeterminism (cont'd) / Discuss TopHat questions
 
-* Class 2: Software QA and Nondeterminism Hands-on Exercises
+* Class 2: In-class Supplementary Exercise 1: Testing Nondeterminic Software
 
 * Listen to lectures 
   * Automated and Manual Testing (READING: AFIST, Chapter 12)
@@ -58,9 +58,9 @@ AFIST = [_A Friendly Introduction to Software Testing_](software-quality-assuran
 
 ## WEEK 6 (Week of 22 FEB)
 
-* Class 1: In-class Supplementary Exercise 1: Behavior Driven Development 
+* Class 1: In-class Supplementary Exercise 2: Behavior Driven Development 
 
-* Class 2: Discuss Supplementary Exercise 1 / TopHat questions
+* Class 2: Discuss Supplementary Exercise 2 / TopHat questions
 
 * Listen to lectures 
   * Writing Testable Code (READING: AFIST, Chapter 16)
@@ -102,7 +102,7 @@ AFIST = [_A Friendly Introduction to Software Testing_](software-quality-assuran
 
 ## WEEK 10 (Week of 22 MAR)
 
-* Class 1: In-class Supplementary Exercise 2: Property-based Testing 
+* Class 1: In-class Supplementary Exercise 3: Property-based Testing 
 
 * Class 2: Student Self-care Day (NO CLASSES) 
 
