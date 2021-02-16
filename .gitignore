@@ -3,3 +3,5 @@
 *.md~
 .course-info.md.swp
 *.swp
+*.bat~
+*.sh~
