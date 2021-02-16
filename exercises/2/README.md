@@ -268,10 +268,10 @@ For looking up methods only, not a user guide.
 https://javadoc.io/static/org.mockito/mockito-core/3.2.4/org/mockito/Mockito.html  
 Most useful is the sections about verification and stubbing.
 
-* Jacoco User Manual:
+* Jacoco User Manual:  
 https://www.jacoco.org/userdoc/index.html
 
-* Jacoco CLI (Command Line Interface) Manual:
+* Jacoco CLI (Command Line Interface) Manual:  
 https://www.jacoco.org/jacoco/trunk/doc/cli.html
 
 * Eclipse IDE
